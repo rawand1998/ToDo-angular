@@ -1,0 +1,28 @@
+<h1 class="title">TODO APP</h1>
+
+<div class="todo-content">
+
+  
+<li *ngFor="let data of todo" (click)="editText(data)">
+  <input type="checkbox" value="checkName" [(ngModel)]="data.completed" (change)="editing=false">
+  <span [ngClass]="{ 'completed' : data.completed }" class="name" >{{ data.name}}</span>
+  
+  <button (click)="delete(data.id)"class="btn-remove">X</button>
+</li>
+</div>
+
+
+<div>
+
+ <h2 class="add-title">Add New Item</h2>
+  <form #TodoForm="ngForm" (ngSubmit)="submit()" *ngIf="creating || editing" class="form">
+    <input type="text" name="name" [(ngModel)]="model.name" [ngClass]="{ 'completed' : model.completed }" />
+    <br/>
+    <button type="submit" class="btn-submit">Submit</button>
+    <button (click)="cancel()" class="btn-cancle">Cnacel</button>
+
+
+  </form>
+
+  <button type="" (click)="creating=true" *ngIf="!creating && ! editing" class="btn-create">Add New</button>
+</div>

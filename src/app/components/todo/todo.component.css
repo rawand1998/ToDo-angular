@@ -1,0 +1,79 @@
+.title{
+    padding-top: 70px;
+    text-align: center;
+}
+li{
+    text-align: center;
+    list-style: none;
+    border-bottom:1px solid #ddd;
+
+    
+}
+.todo-content{
+   
+ 
+    width: 50%;
+    margin-left: 25%;
+    border:1px solid #ddd;
+  
+}
+.btn-remove{
+    margin-left:15%;
+color: #fff;
+    padding:10px 15px;
+    border-radius: 50%;
+    background-color:#f00;
+    border:none;
+    margin-top:2%;
+    margin-bottom:2%;
+
+}
+.completed{
+    color: #000;
+    text-decoration:line-through
+}
+.name{
+    font-size:25px
+}
+.btn-create{
+    margin-left:45%;
+    margin-top:2%;
+    background-color: rgb(18, 87, 177);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding:10px 20px;
+    border:2px solid #ddd
+}
+.form{
+    text-align: center;
+    margin-top:2%;
+}
+.form input{
+    padding:10px 0px;
+    width: 50%;
+}
+.form button{
+    margin-top:2%
+}
+.add-title{
+    text-align: center;
+    padding-top:25px;
+   
+}
+.btn-submit{
+    background-color:rgb(29, 27, 173);
+    font-size:15px;
+    color: #fff;
+    border: none;
+    padding:10px 20px;
+   
+}
+.btn-cancle{
+    background-color:#f00;
+    font-size:15px;
+    color: #fff;
+    border: none;
+    padding:10px 20px;
+    margin-left: 15px;
+}
